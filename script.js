@@ -14,7 +14,14 @@ function countVowels(event) {
             count += 1;
         }
     }
-    return output.innerHTML = count;
+    let vowel;
+    if (count === 1) {
+        vowel = "vowel";
+    } else {
+        vowel = "vowels";
+    }
+
+    return output.innerHTML = "Your input contains " + count + " " + vowel + ".";
 }
 
 btn.addEventListener('click', countVowels);
