@@ -1,7 +1,13 @@
-const countVowels = (string) => {
+const input = document.getElementById('string');
+const btn = document.getElementById('submit');
+const output = document.getElementById('output');
 
+function countVowels(event) {
+    event.preventDefault();
+    output.innerHTML = input.value;
 }
 
+btn.addEventListener('click', countVowels);
 
 /* 
 asdfasdfasf
